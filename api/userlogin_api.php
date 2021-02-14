@@ -21,7 +21,7 @@ while($row=$result->fetch_assoc())
 }
 else
 {
-    echo "not found";
+    echo "invalid credentials";
 }
 
 }

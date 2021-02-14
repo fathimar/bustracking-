@@ -1,7 +1,4 @@
 <?php
-
-
-
 $connection=new mysqli("localhost","root","","bustracking");
 $sql="SELECT * FROM `bus` ";
 $result=$connection->query($sql);
