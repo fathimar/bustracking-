@@ -29,7 +29,7 @@ if(isset($_GET["btn"]))
 {
 
 
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
 $sql="SELECT * FROM `bus` ";
 $result=$connection->query($sql);
 if($result->num_rows>0)

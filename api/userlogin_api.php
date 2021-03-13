@@ -5,7 +5,7 @@ $name=$_POST["username"];
 $password=$_POST["password"];
 
 
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
 $sql="SELECT `username`, `password` FROM `user` WHERE `username`='$name' and `password`='$password'";
 $result=$connection->query($sql);
 if($result->num_rows>0)

@@ -67,7 +67,7 @@ if(isset($_POST["btn"]))
 $name=$_POST["uname"];
 $password=$_POST["pass"];
 
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
 $sql="INSERT INTO `admin`( `username`, `password`) VALUES ('$name','$password') ";
 $result=$connection->query($sql);
 if($result===true)

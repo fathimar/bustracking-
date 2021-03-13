@@ -58,7 +58,7 @@ if(isset($_POST["btn"]))
 {
 
 $phone=$_POST["phoneno"];
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
 $sql="SELECT `id`, `name`,  `email`, `username`, `password` FROM `user` WHERE `phoneno`='$phone'";
 $result=$connection->query($sql);
 if($result->num_rows>0)

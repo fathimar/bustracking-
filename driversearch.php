@@ -60,7 +60,7 @@ if(isset($_POST["btn"]))
 {
 
 $bus=$_POST["busno"];
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
 $sql="SELECT `id`, `busname`, `route`, `drivername`, `username`, `password` FROM `bus` WHERE `busno`='$bus'";
 $result=$connection->query($sql);
 if($result->num_rows>0)

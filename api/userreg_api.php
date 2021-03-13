@@ -8,7 +8,7 @@ $uname=$_POST["username"];
 $password=$_POST["pwd"];
 
 
-$connection=new mysqli("localhost","root","","bustracking");
+$connection=new mysqli("localhost","root","project","bustracking");
  $sql="INSERT INTO `user`(`name`, `phoneno`, `email`, `username`, `password`) VALUES ('$name',$phone,'$email','$uname','$password')";
 $result=$connection->query($sql);
 if($result===true)
